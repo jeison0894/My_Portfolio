@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #000011;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  max-width: 85%;
+  margin: auto;
+}
+
+header {
+  height: 100vh;
+}
+
+header nav {
+  margin: 40px 0;
+  margin-bottom: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav img {
+  height: 30px;
+}
+
+header nav .navLinks {
+  font-size: 13px;
+}
+
+header nav .navLinks a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+header .landingTexts {
+  text-align: center;
+  margin: 0 35px;
+}
+
+header .landingTexts p:first-child {
+  font-size: 7vw;
+  text-transform: uppercase;
+  margin-bottom: 7vh;
+}
+
+header .landingTexts p:last-child {
+  font-size: 3.8vw;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 5vh 0;
+  margin-bottom: 10vh;
+}
+
+header .cromo {
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  left: 0;
+  background-image: url(../imgs/abstract.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */
