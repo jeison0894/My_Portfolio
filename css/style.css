@@ -158,4 +158,43 @@ header .cromo {
 .project .project_container .project_info a span img {
   margin-left: 10px;
 }
+
+.section3 {
+  border-bottom: 1px solid white;
+}
+
+.section3 .question {
+  font-size: 25px;
+  line-height: 38px;
+  font-weight: 300;
+  margin-bottom: 122px;
+}
+
+.section3 .invitation {
+  font-size: 25px;
+  margin-bottom: 34px;
+}
+
+.section3 .emailContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1.5px solid #6A6A6A;
+  border-bottom: 1.5px solid #6A6A6A;
+  padding: 34px 0;
+  margin-bottom: 154px;
+}
+
+.section3 .emailContainer p {
+  font-size: 20px;
+}
+
+.section3 .emailContainer p:last-child {
+  color: #7E7E7E;
+}
+
+/* @import "footer"; */
 /*# sourceMappingURL=style.css.map */

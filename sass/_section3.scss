@@ -1,0 +1,32 @@
+.section3 {
+   border-bottom: 1px solid white;
+
+   .question {
+      font-size: 25px;
+      line-height: 38px;
+      font-weight: 300;
+      margin-bottom: 122px;
+   }
+
+   .invitation {
+      font-size: 25px;
+      margin-bottom: 34px;
+   }
+
+   .emailContainer {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1.5px solid #6A6A6A;
+      border-bottom: 1.5px solid #6A6A6A;
+      padding: 34px 0;
+      margin-bottom: 154px;
+
+      p {
+         font-size: 20px;
+      }
+
+      p:last-child {
+         color: #7E7E7E;
+      }
+   }
+}
