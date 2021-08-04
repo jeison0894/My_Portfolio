@@ -20,6 +20,7 @@ body {
 .titles_sections {
   font-size: 40px;
   margin-bottom: 40px;
+  font-weight: 300;
 }
 
 hr {
@@ -116,5 +117,45 @@ header .cromo {
 
 .s1Grid .profilePhoto {
   grid-area: photo;
+}
+
+.project {
+  margin-bottom: 230px;
+}
+
+.project p {
+  font-size: 20px;
+  margin-bottom: 19px;
+  font-weight: bold;
+}
+
+.project .project_container .project_info h3 {
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.project .project_container .project_info h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 27px 0 57px 0;
+}
+
+.project .project_container .project_info p {
+  font-size: 16px;
+  line-height: 144%;
+  font-weight: 300;
+  margin-bottom: 94px;
+}
+
+.project .project_container .project_info a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.project .project_container .project_info a span img {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=style.css.map */
