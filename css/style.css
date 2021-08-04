@@ -17,8 +17,18 @@ body {
   margin: auto;
 }
 
+.titles_sections {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+hr {
+  margin-bottom: 60px;
+}
+
 header {
   height: 100vh;
+  margin-bottom: 70px;
 }
 
 header nav {
@@ -55,7 +65,7 @@ header .landingTexts {
 }
 
 header .landingTexts p:first-child {
-  font-size: 7vw;
+  font-size: 7.5vw;
   text-transform: uppercase;
   margin-bottom: 7vh;
 }
@@ -76,5 +86,35 @@ header .cromo {
   background-image: url(../imgs/abstract.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.s1Grid {
+  margin-bottom: 150px;
+  display: -ms-grid;
+  display: grid;
+  gap: 80px;
+  grid-template: "infoMe" auto "photo" auto "skills" auto;
+}
+
+.s1Grid .s1Grid_description {
+  grid-area: infoMe;
+  font-size: 16px;
+  line-height: 144%;
+  font-weight: 300;
+}
+
+.s1Grid .s1Grid_skills {
+  grid-area: skills;
+}
+
+.s1Grid .s1Grid_skills li {
+  list-style: none;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.s1Grid .profilePhoto {
+  grid-area: photo;
 }
 /*# sourceMappingURL=style.css.map */

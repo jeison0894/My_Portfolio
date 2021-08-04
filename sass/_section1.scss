@@ -1,0 +1,29 @@
+.s1Grid {
+   margin-bottom: 150px;
+   display: grid;
+   gap: 80px;
+   grid-template: "infoMe"auto "photo"auto "skills"auto;
+
+   .s1Grid_description {
+      grid-area: infoMe;
+      font-size: 16px;
+      line-height: 144%;
+      font-weight: 300;
+   }
+
+   .s1Grid_skills {
+      li {
+         list-style: none;
+         margin-bottom: 16px;
+         font-size: 16px;
+         font-weight: 300;
+
+      }
+
+      grid-area: skills;
+   }
+
+   .profilePhoto {
+      grid-area: photo;
+   }
+}
