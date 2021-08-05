@@ -48,19 +48,23 @@
          margin-bottom: 10vh;
 
          p:first-child {
-            font-size: 38px;
+            position: relative;
+            font-size: 34px;
             max-width: 310px;
             margin-right: 50px;
             margin-bottom: 0;
+            bottom: 80px;
          }
 
          p:last-child {
-            font-size: 24px;
+            font-size: 21px;
             line-height: 30px;
-            max-width: 390px;
+            max-width: 350px;
             margin: 0;
             align-self: flex-end;
          }
+
+
       }
    }
 
@@ -104,6 +108,33 @@
                margin: 60px auto 90px auto;
                text-align: left;
             }
+         }
+      }
+   }
+}
+
+@media (min-width: 1000px) {
+
+   body {
+      max-width: 80%;
+      margin: auto;
+   }
+
+   header {
+      .landingTexts {
+         margin-top: 22vh;
+         margin-bottom: 8vh;
+
+
+         p:first-child {
+            font-size: 45px;
+            max-width: 400px;
+
+         }
+
+         p:last-child {
+            font-size: 20px;
+            max-width: 350px;
          }
       }
    }
