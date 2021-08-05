@@ -1,11 +1,19 @@
 .project {
    margin-bottom: 230px;
 
-   p {
-      font-size: 25px;
-      margin-bottom: 19px;
-      font-weight: bold;
+
+   .numercontainer {
+      max-width: 1200px;
+      margin: auto;
+
+      .project_number {
+         font-size: 25px;
+         margin-bottom: 19px;
+         font-weight: bold;
+         color: #A4A4A4;
+      }
    }
+
 
    .project_container {
       .project_info {
@@ -20,7 +28,8 @@
             text-transform: uppercase;
             font-size: 14px;
             margin: 27px 0 57px 0;
-            color: #A4A4A4;
+            color: #CBCBCB;
+
          }
 
          p {

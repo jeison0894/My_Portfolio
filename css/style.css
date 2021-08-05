@@ -9,6 +9,9 @@ html {
   background-color: #000011;
   color: white;
   font-family: NeueRoman;
+  max-width: 2000px;
+  margin: auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +22,7 @@ body {
 .titles_sections {
   font-size: 50px;
   margin-bottom: 40px;
+  color: #FFF8EB;
 }
 
 hr {
@@ -82,6 +86,10 @@ header nav .navLinks a {
   color: white;
   text-decoration: none;
   margin-left: 16px;
+}
+
+header nav .navLinks a:hover {
+  color: #FFEECF;
 }
 
 header .landingTexts {
@@ -157,10 +165,16 @@ header .cromo {
   margin-bottom: 230px;
 }
 
-.project p {
+.project .numercontainer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.project .numercontainer .project_number {
   font-size: 25px;
   margin-bottom: 19px;
   font-weight: bold;
+  color: #A4A4A4;
 }
 
 .project .project_container .project_info h3 {
@@ -174,7 +188,7 @@ header .cromo {
   text-transform: uppercase;
   font-size: 14px;
   margin: 27px 0 57px 0;
-  color: #A4A4A4;
+  color: #CBCBCB;
 }
 
 .project .project_container .project_info p {
@@ -253,6 +267,19 @@ footer .footerLinks a {
   text-decoration: none;
   color: white;
   margin-left: 10px;
+}
+
+footer .backTotopContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .backTotopContainer p {
+  margin-right: 14px;
 }
 
 @media (max-width: 549px) {
@@ -343,7 +370,7 @@ footer .footerLinks a {
     text-align: center;
   }
   .project .project_container .project-img {
-    width: 80%;
+    width: 60%;
     margin: auto;
   }
   .project .project_container .project_info p {
@@ -355,7 +382,13 @@ footer .footerLinks a {
   }
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 900px) {
+  footer .backTotopContainer {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
   body {
     max-width: 80%;
     margin: auto;
@@ -393,9 +426,9 @@ footer .footerLinks a {
     max-width: 550px;
   }
   .project {
-    margin: 300px 0;
+    margin: 260px 0;
   }
-  .project .project_number {
+  .project .numercontainer .project_number {
     font-size: 20px;
     position: relative;
     top: -45px;
@@ -412,17 +445,15 @@ footer .footerLinks a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: left;
   }
   .project .project_container .project-img {
-    width: 450px;
-    margin: 0 30px;
-    margin-right: 170px;
-  }
-  .project .project_container .project-img2 {
-    width: 450px;
-    margin: 0 30px;
-    margin-left: 170px;
+    width: 400px;
+    height: 400px;
+    margin: 0 57px;
   }
   .project .project_container .project_info {
     max-width: 360px;
@@ -435,7 +466,6 @@ footer .footerLinks a {
     text-transform: uppercase;
     font-size: 18px;
     margin: 27px 0 57px 0;
-    color: #A4A4A4;
   }
   .project .project_container .project_info p {
     font-size: 16px;
@@ -443,14 +473,36 @@ footer .footerLinks a {
     font-weight: 300;
     margin-bottom: 94px;
   }
-  .project .project_container .project_info a {
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+  .project .project_container .project_info a:hover {
+    color: #FFEECF;
   }
-  .project .project_container .project_info a span img {
-    margin-left: 10px;
+  footer .footerLinks a {
+    margin-left: 50px;
+  }
+  footer .footerLinks a:hover {
+    color: #FFEECF;
+  }
+  footer .backTotopContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .backTotopContainer p {
+    margin-right: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project .project_container .project-img {
+    width: 450px;
+    height: 450px;
+    margin-right: 90px;
   }
 }
 /*# sourceMappingURL=style.css.map */

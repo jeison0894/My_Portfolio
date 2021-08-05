@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 
 <head>
    <meta charset="UTF-8">
@@ -16,8 +16,8 @@
          <p class="myLogo">JeisonGarzón</p>
          <img class="LogoResponsive" src="imgs/myLogo.svg" alt="">
          <div class="navLinks">
-            <a href="">Work</a>
-            <a href="">Contact</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
          </div>
       </nav>
 
@@ -60,14 +60,16 @@
    </section>
 
    <!----  Section 2 ---->
-   <section class="section2">
+   <section class="section2" id="work">
 
       <p class="titles_sections">Featured Projects</p>
       <hr>
 
       <div class="project">
-         <div class="project_container">
+         <div class="numercontainer">
             <p class="project_number">01</p>
+         </div>
+         <div class="project_container">
             <img class="project-img" src="imgs/project_img1.png" width="100%">
             <div class="project_info">
                <h3>Title project 1</h3>
@@ -83,7 +85,11 @@
       </div>
 
       <div class="project">
+         <div class="numercontainer">
+            <p class="project_number">02</p>
+         </div>
          <div class="project_container">
+            <img class="project-img" src="imgs/project_img2.png" width="100%">
             <div class="project_info">
                <h3>Title project 2</h3>
                <h4>Branding / interface Design / graphic design</h4>
@@ -94,14 +100,14 @@
                   dictum congue aliquet nunc. </p>
                <a href="">VIEW PROJECT <span><img src="imgs/arrow.svg" alt=""></span> </a>
             </div>
-            <img class="project-img2" src="imgs/project_img2.png" width="100%">
-            <p class="project_number">02</p>
          </div>
       </div>
 
       <div class="project">
-         <div class="project_container">
+         <div class="numercontainer">
             <p class="project_number">03</p>
+         </div>
+         <div class="project_container">
             <img class="project-img" src="imgs/project_img3.png" width="100%">
             <div class="project_info">
                <h3>Title project 3</h3>
@@ -118,7 +124,7 @@
    </section>
 
    <!----  Section 3 ---->
-   <section class="section3">
+   <section class="section3" id="contact">
 
       <p class="titles_sections">Say hello</p>
       <hr class="lastHR">
@@ -134,17 +140,17 @@
    <!----  Footer ---->
    <footer>
       <img class="LogoResponsive" src="imgs/myLogo.svg">
-      <p class="myLogo">JeisonGarzón ©2021</p>
+      <p class="myLogo">JeisonGarzón © 2021</p>
       <div class="footerLinks">
          <a href="">GitHub</a>
          <a href="">Behance</a>
          <a href="">Linkedin</a>
       </div>
 
-      <!--  <div class="backTotopContainer">
+      <div class="backTotopContainer">
          <p>Back to top</p>
-         <img src="" alt="">
-      </div> -->
+         <a href="#top"><img src="imgs/arrowUp.svg" alt="" width="15.55px"></a>
+
    </footer>
 </body>
 

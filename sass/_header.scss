@@ -18,6 +18,10 @@ header {
             color: white;
             text-decoration: none;
             margin-left: 16px;
+
+            &:hover {
+               color: $colorHover;
+            }
          }
       }
    }

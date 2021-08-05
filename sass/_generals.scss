@@ -1,3 +1,5 @@
+$colorHover: #FFEECF;
+
 * {
    padding: 0;
    margin: 0;
@@ -8,6 +10,9 @@ html {
    background-color: #000011;
    color: white;
    font-family: NeueRoman;
+   max-width: 2000px;
+   margin: auto;
+   scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +23,7 @@ body {
 .titles_sections {
    font-size: 50px;
    margin-bottom: 40px;
+   color: #FFF8EB;
 }
 
 hr {
@@ -34,7 +40,6 @@ hr {
 }
 
 
-
 @font-face {
    font-family: 'NeueRoman';
    font-style: normal;
@@ -42,16 +47,12 @@ hr {
    src: url('../fonts/NeueHaasDisplayRoman.woff') format('woff');
 }
 
-
-
 @font-face {
    font-family: 'NeueMedium';
    font-style: normal;
    font-weight: 600;
    src: url('../fonts/NeueHaasDisplayMediu.woff') format('woff');
 }
-
-
 
 @font-face {
    font-family: 'NeueBold';
