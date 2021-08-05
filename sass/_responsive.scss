@@ -80,7 +80,7 @@
          display: grid;
          justify-content: space-around;
          grid-template:
-            "title title"auto "empty skills"auto "empty skills"auto;
+            "title title"auto "empty skills"auto "empty skills"auto/ 140px auto auto
       }
 
       .profilePhoto {
@@ -136,6 +136,29 @@
             font-size: 20px;
             max-width: 350px;
          }
+      }
+   }
+
+   .s1Grid {
+      margin-top: 110px;
+      gap: 50px;
+      grid-template:
+         "infoMe photo"auto "skills photo"auto "skills photo"auto;
+
+      .s1Grid_description {
+         max-width: 37vw;
+      }
+
+      .skillsContainer {
+         justify-content: space-between;
+         margin-top: 20vh;
+         max-width: 400px;
+      }
+
+      .profilePhoto {
+         width: 85%;
+         margin-right: 0;
+         max-width: 550px;
       }
    }
 }

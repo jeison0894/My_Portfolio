@@ -326,7 +326,7 @@ footer .footerLinks a {
     display: grid;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    grid-template: "title title" auto "empty skills" auto "empty skills" auto;
+    grid-template: "title title" auto "empty skills" auto "empty skills" auto/140px auto auto;
   }
   .s1Grid .profilePhoto {
     width: 70%;
@@ -371,6 +371,26 @@ footer .footerLinks a {
   header .landingTexts p:last-child {
     font-size: 20px;
     max-width: 350px;
+  }
+  .s1Grid {
+    margin-top: 110px;
+    gap: 50px;
+    grid-template: "infoMe photo" auto "skills photo" auto "skills photo" auto;
+  }
+  .s1Grid .s1Grid_description {
+    max-width: 37vw;
+  }
+  .s1Grid .skillsContainer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 20vh;
+    max-width: 400px;
+  }
+  .s1Grid .profilePhoto {
+    width: 85%;
+    margin-right: 0;
+    max-width: 550px;
   }
 }
 /*# sourceMappingURL=style.css.map */
