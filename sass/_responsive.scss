@@ -17,7 +17,10 @@
    }
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
+   body {
+      max-width: 80%;
+   }
 
    header {
       .navLinks {
@@ -47,6 +50,27 @@
             margin: 0;
             align-self: flex-end;
          }
+      }
+   }
+
+
+   .s1Grid {
+      margin-bottom: 190px;
+
+      .s1Grid_description {
+         line-height: 160%;
+      }
+
+      .skillsContainer {
+         display: grid;
+         justify-content: space-around;
+         grid-template:
+            "title title"auto "empty skills"auto "empty skills"auto;
+      }
+
+      .profilePhoto {
+         width: 70%;
+         margin: auto;
       }
    }
 }

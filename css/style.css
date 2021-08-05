@@ -122,10 +122,15 @@ header .cromo {
   line-height: 144%;
 }
 
-.s1Grid .skillsContainer p {
-  font-size: 25px;
+.s1Grid .skillsContainer .emptydiv {
+  grid-area: empty;
+}
+
+.s1Grid .skillsContainer .skills_title {
+  font-size: 28px;
   margin-bottom: 40px;
   font-family: NeueMedium;
+  grid-area: title;
 }
 
 .s1Grid .skillsContainer .s1Grid_skills {
@@ -257,7 +262,10 @@ footer .footerLinks a {
   }
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
+  body {
+    max-width: 80%;
+  }
   header .navLinks {
     font-size: 19px;
   }
@@ -290,6 +298,23 @@ footer .footerLinks a {
     margin: 0;
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+  .s1Grid {
+    margin-bottom: 190px;
+  }
+  .s1Grid .s1Grid_description {
+    line-height: 160%;
+  }
+  .s1Grid .skillsContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    grid-template: "title title" auto "empty skills" auto "empty skills" auto;
+  }
+  .s1Grid .profilePhoto {
+    width: 70%;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
