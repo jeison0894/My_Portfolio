@@ -365,8 +365,8 @@ footer .footerLinks a {
     margin-bottom: 8vh;
   }
   header .landingTexts p:first-child {
-    font-size: 45px;
-    max-width: 400px;
+    font-size: 56px;
+    max-width: 460px;
   }
   header .landingTexts p:last-child {
     font-size: 20px;
@@ -391,6 +391,66 @@ footer .footerLinks a {
     width: 85%;
     margin-right: 0;
     max-width: 550px;
+  }
+  .project {
+    margin: 300px 0;
+  }
+  .project .project_number {
+    font-size: 20px;
+    position: relative;
+    top: -45px;
+    color: #9B9B9B;
+  }
+  .project .project_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+  }
+  .project .project_container .project-img {
+    width: 450px;
+    margin: 0 30px;
+    margin-right: 170px;
+  }
+  .project .project_container .project-img2 {
+    width: 450px;
+    margin: 0 30px;
+    margin-left: 170px;
+  }
+  .project .project_container .project_info {
+    max-width: 360px;
+  }
+  .project .project_container .project_info h3 {
+    font-size: 40px;
+  }
+  .project .project_container .project_info h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 27px 0 57px 0;
+    color: #A4A4A4;
+  }
+  .project .project_container .project_info p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    margin-bottom: 94px;
+  }
+  .project .project_container .project_info a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .project .project_container .project_info a span img {
+    margin-left: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
