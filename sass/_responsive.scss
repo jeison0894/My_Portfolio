@@ -73,4 +73,32 @@
          margin: auto;
       }
    }
+
+   .project {
+
+      .project_container {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+
+         .project-img {
+            width: 80%;
+            margin: auto;
+         }
+
+         .project_info {
+
+
+            p {
+               font-size: 20px;
+               line-height: 30px;
+               max-width: 700px;
+               margin: 60px auto;
+               text-align: left;
+            }
+
+
+         }
+      }
+   }
 }
