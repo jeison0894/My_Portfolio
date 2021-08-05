@@ -6,24 +6,34 @@
 
    .s1Grid_description {
       grid-area: infoMe;
-      font-size: 16px;
+      font-size: 20px;
       line-height: 144%;
-      font-weight: 300;
    }
 
-   .s1Grid_skills {
-      li {
-         list-style: none;
-         margin-bottom: 16px;
-         font-size: 16px;
-         font-weight: 300;
+   .skillsContainer {
 
+      p {
+         font-size: 25px;
+         margin-bottom: 40px;
+         font-family: NeueMedium;
       }
 
-      grid-area: skills;
+      .s1Grid_skills {
+         li {
+            list-style: none;
+            margin-bottom: 16px;
+            font-size: 19px;
+            line-height: 115%;
+         }
+
+         grid-area: skills;
+      }
    }
 
+
+
    .profilePhoto {
+
       grid-area: photo;
    }
 }

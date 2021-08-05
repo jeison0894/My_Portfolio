@@ -1,0 +1,18 @@
+footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 42px 0;
+
+   img {
+      height: 30px
+   }
+
+   .footerLinks {
+      a {
+         text-decoration: none;
+         color: white;
+         margin-left: 10px;
+      }
+   }
+}

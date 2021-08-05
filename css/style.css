@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +8,7 @@
 html {
   background-color: #000011;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: NeueRoman;
 }
 
 body {
@@ -18,13 +17,37 @@ body {
 }
 
 .titles_sections {
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 40px;
-  font-weight: 300;
 }
 
 hr {
   margin-bottom: 60px;
+}
+
+.lastHR {
+  margin-bottom: 25px;
+}
+
+@font-face {
+  font-family: 'NeueRoman';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/NeueHaasDisplayRoman.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'NeueMedium';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/NeueHaasDisplayMediu.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'NeueBold';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/NeueHaasDisplayBold.woff") format("woff");
 }
 
 header {
@@ -50,19 +73,16 @@ header nav img {
   height: 30px;
 }
 
-header nav .navLinks {
-  font-size: 13px;
-}
-
 header nav .navLinks a {
   color: white;
   text-decoration: none;
-  margin-left: 10px;
+  margin-left: 16px;
 }
 
 header .landingTexts {
   text-align: center;
   margin: 0 35px;
+  margin-bottom: 10vh;
 }
 
 header .landingTexts p:first-child {
@@ -72,11 +92,10 @@ header .landingTexts p:first-child {
 }
 
 header .landingTexts p:last-child {
-  font-size: 3.8vw;
+  font-size: 4vw;
   font-weight: 300;
   line-height: 22px;
   margin: 5vh 0;
-  margin-bottom: 10vh;
 }
 
 header .cromo {
@@ -99,20 +118,25 @@ header .cromo {
 
 .s1Grid .s1Grid_description {
   grid-area: infoMe;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 144%;
-  font-weight: 300;
 }
 
-.s1Grid .s1Grid_skills {
+.s1Grid .skillsContainer p {
+  font-size: 25px;
+  margin-bottom: 40px;
+  font-family: NeueMedium;
+}
+
+.s1Grid .skillsContainer .s1Grid_skills {
   grid-area: skills;
 }
 
-.s1Grid .s1Grid_skills li {
+.s1Grid .skillsContainer .s1Grid_skills li {
   list-style: none;
   margin-bottom: 16px;
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 19px;
+  line-height: 115%;
 }
 
 .s1Grid .profilePhoto {
@@ -124,14 +148,15 @@ header .cromo {
 }
 
 .project p {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 19px;
   font-weight: bold;
 }
 
 .project .project_container .project_info h3 {
-  font-size: 40px;
+  font-size: 42px;
   margin-top: 50px;
+  letter-spacing: 0.8px;
 }
 
 .project .project_container .project_info h4 {
@@ -139,11 +164,12 @@ header .cromo {
   text-transform: uppercase;
   font-size: 14px;
   margin: 27px 0 57px 0;
+  color: #A4A4A4;
 }
 
 .project .project_container .project_info p {
   font-size: 16px;
-  line-height: 144%;
+  line-height: 26px;
   font-weight: 300;
   margin-bottom: 94px;
 }
@@ -167,11 +193,11 @@ header .cromo {
   font-size: 25px;
   line-height: 38px;
   font-weight: 300;
-  margin-bottom: 122px;
+  margin-bottom: 90px;
 }
 
 .section3 .invitation {
-  font-size: 25px;
+  font-size: 29px;
   margin-bottom: 34px;
 }
 
@@ -184,7 +210,7 @@ header .cromo {
           justify-content: space-between;
   border-top: 1.5px solid #6A6A6A;
   border-bottom: 1.5px solid #6A6A6A;
-  padding: 34px 0;
+  padding: 25px 0;
   margin-bottom: 154px;
 }
 
@@ -196,5 +222,74 @@ header .cromo {
   color: #7E7E7E;
 }
 
-/* @import "footer"; */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 42px 0;
+}
+
+footer img {
+  height: 30px;
+}
+
+footer .footerLinks a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+}
+
+@media (min-width: 550px) {
+  header .landingTexts p:first-child {
+    font-size: 6vw;
+  }
+  header .landingTexts p:last-child {
+    font-size: 3vw;
+    max-width: 400px;
+    margin: auto;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 770px) {
+  header .navLinks {
+    font-size: 19px;
+  }
+  header .landingTexts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+    margin: 0;
+    margin-top: 245px;
+    margin-bottom: 10vh;
+  }
+  header .landingTexts p:first-child {
+    font-size: 38px;
+    max-width: 310px;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+  header .landingTexts p:last-child {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 390px;
+    margin: 0;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
 /*# sourceMappingURL=style.css.map */
