@@ -13,11 +13,11 @@
    header {
       .landingTexts {
 
-         p:first-child {
+         .landingTitle {
             font-size: 6vw;
          }
 
-         p:last-child {
+         .landingSubtitle {
             font-size: 3vw;
             max-width: 400px;
             margin: auto;
@@ -46,7 +46,7 @@
          margin-top: 245px;
          margin-bottom: 10vh;
 
-         p:first-child {
+         .landingTitle {
             position: relative;
             font-size: 34px;
             max-width: 310px;
@@ -55,7 +55,7 @@
             bottom: 80px;
          }
 
-         p:last-child {
+         .landingSubtitle {
             font-size: 21px;
             line-height: 30px;
             max-width: 350px;
@@ -132,12 +132,12 @@
          margin-top: 22vh;
          margin-bottom: 8vh;
 
-         p:first-child {
+         .landingTitle {
             font-size: 56px;
             max-width: 460px;
          }
 
-         p:last-child {
+         .landingSubtitle {
             font-size: 20px;
             max-width: 350px;
          }

@@ -22,8 +22,12 @@
       </nav>
 
       <div class="landingTexts">
-         <p>Interactive designer and web developer</p>
-         <p>More than a website, I design and built visual experiences</p>
+         <div class="animationContainer landingTitle overflow">
+            <p class="reveal">Interactive designer and web developer</p>
+         </div>
+         <div class="animationContainer landingSubtitle overflow">
+            <p class="reveal">More than a website, I design and built visual experiences</p>
+         </div>
       </div>
       <div class="cromo">
       </div>
@@ -31,8 +35,9 @@
 
    <!----  Section 1 ---->
    <section class="section1">
-
-      <p class="titles_sections">About</p>
+      <div class="animationContainer overflow ">
+         <p class="titles_sections reveal">About</p>
+      </div>
       <hr>
 
       <div class="s1Grid">
@@ -61,8 +66,9 @@
 
    <!----  Section 2 ---->
    <section class="section2" id="work">
-
-      <p class="titles_sections">Featured Projects</p>
+      <div class="animationContainer overflow">
+         <p class="titles_sections reveal ">Featured Projects</p>
+      </div>
       <hr>
 
       <div class="project">
@@ -125,14 +131,15 @@
 
    <!----  Section 3 ---->
    <section class="section3" id="contact">
-
-      <p class="titles_sections">Say hello</p>
+      <div class="animationContainer overflow">
+         <p class="titles_sections reveal">Say hello</p>
+      </div>
       <hr class="lastHR">
       <p class="question">Looking to start a new project or any collaboration ?</p>
       <p class="invitation">Send me an email</p>
 
       <div class="emailContainer">
-         <p> jeisson0894@gmail.com</p>
+         <p>jeisson0894@gmail.com</p>
          <p>copy</p>
       </div>
    </section>
@@ -150,8 +157,11 @@
       <div class="backTotopContainer">
          <p>Back to top</p>
          <a href="#top"><img src="imgs/arrowUp.svg" alt="" width="15.55px"></a>
-
    </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+   <script src="script.js"></script>
 </body>
 
 </html>

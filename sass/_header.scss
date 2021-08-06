@@ -31,17 +31,29 @@ header {
       margin: 0 35px;
       margin-bottom: 10vh;
 
-      p:first-child {
+      .landingTitle {
          font-size: 7.5vw;
          text-transform: uppercase;
          margin-bottom: 7vh;
+
       }
 
-      p:last-child {
+      .landingSubtitle {
          font-size: 4vw;
          font-weight: 300;
          line-height: 22px;
          margin: 5vh 0;
+
+      }
+   }
+
+   @keyframes banner {
+      from {
+         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+
+      to {
+         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       }
    }
 
@@ -50,10 +62,9 @@ header {
       height: 40vh;
       position: absolute;
       left: 0;
-
       background-image: url(../imgs/abstract.jpg);
       background-position: center;
       background-size: cover;
-
+      animation: banner var(--duration) calc(var(--duration) / 2) cubic-bezier(0.1, 0, 0.1, 1) both;
    }
 }

@@ -5,6 +5,12 @@
           box-sizing: border-box;
 }
 
+:root {
+  --duration: 2s;
+  --delay: 0s;
+  --easing: cubic-bezier(0.25, 0, 0.25, 1);
+}
+
 html {
   background-color: #000011;
   color: white;
@@ -17,6 +23,20 @@ html {
 body {
   max-width: 85%;
   margin: auto;
+  -webkit-animation: fade-in 0.5s linear 0.5s both;
+          animation: fade-in 0.5s linear 0.5s both;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
 }
 
 .titles_sections {
@@ -36,6 +56,10 @@ hr {
 .myLogo {
   font-size: 23px;
   font-family: NeueMedium;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 @font-face {
@@ -98,17 +122,39 @@ header .landingTexts {
   margin-bottom: 10vh;
 }
 
-header .landingTexts p:first-child {
+header .landingTexts .landingTitle {
   font-size: 7.5vw;
   text-transform: uppercase;
   margin-bottom: 7vh;
 }
 
-header .landingTexts p:last-child {
+header .landingTexts .landingSubtitle {
   font-size: 4vw;
   font-weight: 300;
   line-height: 22px;
   margin: 5vh 0;
+}
+
+@-webkit-keyframes banner {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes banner {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 header .cromo {
@@ -119,6 +165,8 @@ header .cromo {
   background-image: url(../imgs/abstract.jpg);
   background-position: center;
   background-size: cover;
+  -webkit-animation: banner var(--duration) calc(var(--duration) / 2) cubic-bezier(0.1, 0, 0.1, 1) both;
+          animation: banner var(--duration) calc(var(--duration) / 2) cubic-bezier(0.1, 0, 0.1, 1) both;
 }
 
 .s1Grid {
@@ -292,10 +340,10 @@ footer .backTotopContainer p {
   .LogoResponsive {
     display: none;
   }
-  header .landingTexts p:first-child {
+  header .landingTexts .landingTitle {
     font-size: 6vw;
   }
-  header .landingTexts p:last-child {
+  header .landingTexts .landingSubtitle {
     font-size: 3vw;
     max-width: 400px;
     margin: auto;
@@ -326,7 +374,7 @@ footer .backTotopContainer p {
     margin-top: 245px;
     margin-bottom: 10vh;
   }
-  header .landingTexts p:first-child {
+  header .landingTexts .landingTitle {
     position: relative;
     font-size: 34px;
     max-width: 310px;
@@ -334,7 +382,7 @@ footer .backTotopContainer p {
     margin-bottom: 0;
     bottom: 80px;
   }
-  header .landingTexts p:last-child {
+  header .landingTexts .landingSubtitle {
     font-size: 21px;
     line-height: 30px;
     max-width: 350px;
@@ -397,11 +445,11 @@ footer .backTotopContainer p {
     margin-top: 22vh;
     margin-bottom: 8vh;
   }
-  header .landingTexts p:first-child {
+  header .landingTexts .landingTitle {
     font-size: 56px;
     max-width: 460px;
   }
-  header .landingTexts p:last-child {
+  header .landingTexts .landingSubtitle {
     font-size: 20px;
     max-width: 350px;
   }
