@@ -18,10 +18,11 @@ html {
   max-width: 2000px;
   margin: auto;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
-  max-width: 85%;
+  max-width: 82%;
   margin: auto;
   -webkit-animation: fade-in 0.5s linear 0.5s both;
           animation: fade-in 0.5s linear 0.5s both;
@@ -504,15 +505,18 @@ footer .backTotopContainer p {
     text-align: left;
   }
   .project .project_container .project-img {
-    width: 40%;
+    width: 80%;
     margin: 0 0;
-    margin-right: 100px;
+    margin-right: 140px;
   }
-  .project .project_container .project-img2 {
+  .project .project_container .containerImg2 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    margin: 0;
+  }
+  .project .project_container .containerImg2 .project-img2 {
+    width: 100%;
+    margin-right: 0;
   }
   .project .project_container .project_info {
     max-width: 360px;
@@ -536,7 +540,7 @@ footer .backTotopContainer p {
     color: #FFEECF;
   }
   .project .project_container .project_info2 {
-    margin-right: 100px;
+    margin-right: 140px;
   }
   footer .footerLinks a {
     margin-left: 50px;
@@ -562,6 +566,9 @@ footer .backTotopContainer p {
 
 @media (min-width: 1200px) {
   .project .project_container .project-img {
+    width: 450px;
+  }
+  .project .project_container .containerImg2 .project-img2 {
     width: 450px;
   }
 }

@@ -189,14 +189,18 @@
          text-align: left;
 
          .project-img {
-            width: 40%;
+            width: 80%;
             margin: 0 0;
-            margin-right: 100px;
+            margin-right: 140px;
          }
 
-         .project-img2 {
+         .containerImg2 {
             order: 1;
-            margin: 0;
+
+            .project-img2 {
+               width: 100%;
+               margin-right: 0;
+            }
          }
 
          .project_info {
@@ -226,7 +230,7 @@
          }
 
          .project_info2 {
-            margin-right: 100px;
+            margin-right: 140px;
          }
       }
    }
@@ -260,6 +264,15 @@
          .project-img {
             width: 450px;
          }
+
+         .containerImg2 {
+            .project-img2 {
+               width: 450px;
+
+            }
+         }
       }
+
+
    }
 }
