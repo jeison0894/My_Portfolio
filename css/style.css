@@ -290,8 +290,13 @@ header .cromo {
   font-size: 20px;
 }
 
-.section3 .emailContainer p:last-child {
+.section3 .emailContainer .btnClipboard {
   color: #7E7E7E;
+  cursor: pointer;
+}
+
+.section3 .emailContainer .btnClipboard:hover {
+  color: #bebdba;
 }
 
 footer {

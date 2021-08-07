@@ -31,3 +31,18 @@ appear2.forEach((el, i) => {
       },
    });
 });
+
+// Clipboard 
+
+function copyElementText() {
+   var text = document.getElementById('emailClipboard').innerText;
+   var elem = document.createElement("textarea");
+   var btn = document.getElementById("btnClipboard");
+   document.body.appendChild(elem);
+   elem.value = text;
+   elem.select();
+   document.execCommand("copy");
+   document.body.removeChild(elem);
+
+   btn.textContent = "copied"
+}
