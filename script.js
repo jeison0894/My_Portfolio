@@ -8,7 +8,7 @@ appear.forEach((el, i) => {
 
       scrollTrigger: {
          trigger: el,
-         start: "top bottom-=100px",
+         start: "top bottom-=130px",
          end: "bottom top",
          once: true,
          toggleActions: "restart pause resume reset",
@@ -31,6 +31,24 @@ appear2.forEach((el, i) => {
       },
    });
 });
+
+
+let images = gsap.utils.toArray(".revealer-img");
+images.forEach((el) => {
+   gsap.from(el, {
+      opacity: 0,
+      yPercent: 10,
+      scale: 1.2,
+      duration: 2,
+      scrollTrigger: {
+         trigger: el,
+         once: true,
+         start: "top bottom-=100px",
+         toggleActions: "restart pause resume pause"
+      }
+   });
+});
+
 
 // Clipboard 
 
