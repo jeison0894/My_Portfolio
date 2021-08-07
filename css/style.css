@@ -499,9 +499,15 @@ footer .backTotopContainer p {
     text-align: left;
   }
   .project .project_container .project-img {
-    width: 400px;
-    height: 400px;
-    margin: 0 57px;
+    width: 40%;
+    margin: 0 0;
+    margin-right: 100px;
+  }
+  .project .project_container .project-img2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0;
   }
   .project .project_container .project_info {
     max-width: 360px;
@@ -523,6 +529,9 @@ footer .backTotopContainer p {
   }
   .project .project_container .project_info a:hover {
     color: #FFEECF;
+  }
+  .project .project_container .project_info2 {
+    margin-right: 100px;
   }
   footer .footerLinks a {
     margin-left: 50px;
@@ -549,8 +558,6 @@ footer .backTotopContainer p {
 @media (min-width: 1200px) {
   .project .project_container .project-img {
     width: 450px;
-    height: 450px;
-    margin-right: 90px;
   }
 }
 /*# sourceMappingURL=style.css.map */

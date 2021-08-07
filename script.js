@@ -4,7 +4,7 @@ appear.forEach((el, i) => {
       yPercent: 120,
       opacity: 0,
       duration: 1,
-      delay: 0.2,
+      delay: 1.8,
 
       scrollTrigger: {
          trigger: el,
@@ -12,24 +12,22 @@ appear.forEach((el, i) => {
          end: "bottom top",
          once: true,
          toggleActions: "restart pause resume reset",
-
       },
-
    });
 });
 
-
-
-
-
-
-//Copy to clipboard
-
-function myFunction() {
-
-   let email = document.getElementById('email')
-   email.select();
-   email.setSelectionRange(0, 99999);
-   document.execCommand("copyyy");
-   alert("Copied the text: " + email.value);
-}
+let appear2 = gsap.utils.toArray(".reveal2");
+appear2.forEach((el, i) => {
+   gsap.from(el, {
+      yPercent: 120,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+         trigger: el,
+         start: "top bottom-=100px",
+         end: "bottom top",
+         once: true,
+         toggleActions: "restart pause resume reset",
+      },
+   });
+});

@@ -189,9 +189,14 @@
          text-align: left;
 
          .project-img {
-            width: 400px;
-            height: 400px;
-            margin: 0 57px;
+            width: 40%;
+            margin: 0 0;
+            margin-right: 100px;
+         }
+
+         .project-img2 {
+            order: 1;
+            margin: 0;
          }
 
          .project_info {
@@ -218,6 +223,10 @@
             a:hover {
                color: $colorHover;
             }
+         }
+
+         .project_info2 {
+            margin-right: 100px;
          }
       }
    }
@@ -250,8 +259,6 @@
       .project_container {
          .project-img {
             width: 450px;
-            height: 450px;
-            margin-right: 90px;
          }
       }
    }
