@@ -1,83 +1,79 @@
-$colorHover: #FFEECF;
+$colorHover: #ffeecf;
 
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-   --duration: 2s;
-   --delay: 0s;
-   --easing: cubic-bezier(0.25, 0, 0.25, 1);
+  --duration: 2s;
+  --delay: 0s;
+  --easing: cubic-bezier(0.25, 0, 0.25, 1);
 }
 
 html {
-   background-color: #000011;
-   color: white;
-   font-family: NeueRoman;
-   max-width: 2000px;
-   margin: auto;
-   scroll-behavior: smooth;
-   overflow-x: hidden;
+  background-color: #000011;
+  color: white;
+  font-family: NeueRoman;
+  max-width: 2000px;
+  margin: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-
 body {
-   max-width: 82%;
-   margin: auto;
-   animation: fade-in 0.5s linear 0.5s both;
+  max-width: 82%;
+  margin: auto;
+  animation: fade-in 0.5s linear 0.5s both;
 }
 
 @keyframes fade-in {
-   from {
-      opacity: 0;
-   }
+  from {
+    opacity: 0;
+  }
 }
 
 .titles_sections {
-   font-size: 50px;
-   margin-bottom: 40px;
-   color: #FFF8EB;
+  font-size: 50px;
+  margin-bottom: 40px;
+  color: #fff8eb;
 }
 
 hr {
-   margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .lastHR {
-   margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .myLogo {
-   font-size: 23px;
-   font-family: NeueMedium;
+  font-size: 23px;
+  font-family: NeueMedium;
 }
 
 .overflow {
-   overflow: hidden;
-}
-
-
-
-@font-face {
-   font-family: 'NeueRoman';
-   font-style: normal;
-   font-weight: 500;
-   src: url('../fonts/NeueHaasDisplayRoman.woff') format('woff');
+  overflow: hidden;
 }
 
 @font-face {
-   font-family: 'NeueMedium';
-   font-style: normal;
-   font-weight: 600;
-   src: url('../fonts/NeueHaasDisplayMediu.woff') format('woff');
+  font-family: "NeueRoman";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/NeueHaasDisplayRoman.woff") format("woff");
 }
 
 @font-face {
-   font-family: 'NeueBold';
-   font-style: normal;
-   font-weight: 700;
-   src: url('../fonts/NeueHaasDisplayBold.woff') format('woff');
+  font-family: "NeueMedium";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/NeueHaasDisplayMediu.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NeueBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/NeueHaasDisplayBold.woff") format("woff");
 }

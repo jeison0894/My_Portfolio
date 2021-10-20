@@ -43,7 +43,7 @@ body {
 .titles_sections {
   font-size: 50px;
   margin-bottom: 40px;
-  color: #FFF8EB;
+  color: #fff8eb;
 }
 
 hr {
@@ -64,21 +64,21 @@ hr {
 }
 
 @font-face {
-  font-family: 'NeueRoman';
+  font-family: "NeueRoman";
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/NeueHaasDisplayRoman.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'NeueMedium';
+  font-family: "NeueMedium";
   font-style: normal;
   font-weight: 600;
   src: url("../fonts/NeueHaasDisplayMediu.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'NeueBold';
+  font-family: "NeueBold";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/NeueHaasDisplayBold.woff") format("woff");
@@ -114,7 +114,7 @@ header nav .navLinks a {
 }
 
 header nav .navLinks a:hover {
-  color: #FFEECF;
+  color: #ffeecf;
 }
 
 header .landingTexts {
@@ -195,15 +195,20 @@ header .cromo {
   grid-area: title;
 }
 
-.s1Grid .skillsContainer .s1Grid_skills {
+.s1Grid .skillsContainer .s1Grid_skills,
+.s1Grid .skillsContainer .s1Grid_skills2 {
   grid-area: skills;
 }
 
-.s1Grid .skillsContainer .s1Grid_skills li {
-  list-style: none;
+.s1Grid .skillsContainer .s1Grid_skills li,
+.s1Grid .skillsContainer .s1Grid_skills2 li {
   margin-bottom: 16px;
   font-size: 19px;
   line-height: 115%;
+}
+
+.s1Grid .skillsContainer .s1Grid_skills2 {
+  grid-area: skills2;
 }
 
 .s1Grid .profilePhoto {
@@ -223,7 +228,7 @@ header .cromo {
   font-size: 25px;
   margin-bottom: 19px;
   font-weight: bold;
-  color: #A4A4A4;
+  color: #a4a4a4;
 }
 
 .project .project_container .project_info h3 {
@@ -237,7 +242,7 @@ header .cromo {
   text-transform: uppercase;
   font-size: 14px;
   margin: 27px 0 57px 0;
-  color: #CBCBCB;
+  color: #cbcbcb;
 }
 
 .project .project_container .project_info p {
@@ -407,7 +412,7 @@ footer .backTotopContainer p {
     display: grid;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    grid-template: "title title" auto "empty skills" auto "empty skills" auto/140px auto auto;
+    grid-template: "title title" auto "skills skills2" auto "skills skills2" auto/ 310px auto auto;
   }
   .s1Grid .profilePhoto {
     width: 70%;
@@ -486,7 +491,7 @@ footer .backTotopContainer p {
     font-size: 20px;
     position: relative;
     top: -45px;
-    color: #9B9B9B;
+    color: #9b9b9b;
   }
   .project .project_container {
     display: -webkit-box;
@@ -531,13 +536,13 @@ footer .backTotopContainer p {
     margin: 27px 0 57px 0;
   }
   .project .project_container .project_info p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
     font-weight: 300;
     margin-bottom: 94px;
   }
   .project .project_container .project_info a:hover {
-    color: #FFEECF;
+    color: #ffeecf;
   }
   .project .project_container .project_info2 {
     margin-right: 140px;
@@ -546,7 +551,7 @@ footer .backTotopContainer p {
     margin-left: 50px;
   }
   footer .footerLinks a:hover {
-    color: #FFEECF;
+    color: #ffeecf;
   }
   footer .backTotopContainer {
     display: -webkit-box;
