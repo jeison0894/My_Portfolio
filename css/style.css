@@ -202,6 +202,7 @@ header .cromo {
 
 .s1Grid .skillsContainer .s1Grid_skills li,
 .s1Grid .skillsContainer .s1Grid_skills2 li {
+  list-style: none;
   margin-bottom: 16px;
   font-size: 19px;
   line-height: 115%;
@@ -344,6 +345,25 @@ footer .backTotopContainer p {
 @media (max-width: 549px) {
   .myLogo {
     display: none;
+  }
+  .project .project_container .project_info h3 {
+    font-size: 34px;
+  }
+  .s1Grid .s1Grid_description {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .s1Grid .skillsContainer .skills_title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .s1Grid .skillsContainer .s1Grid_skills li,
+  .s1Grid .skillsContainer .s1Grid_skills2 li {
+    font-size: 16px;
+  }
+  .section3 .question {
+    font-size: 17px;
+    line-height: 25px;
   }
 }
 

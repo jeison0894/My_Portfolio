@@ -2,6 +2,44 @@
   .myLogo {
     display: none;
   }
+
+  .project {
+    .project_container {
+      .project_info {
+        h3 {
+          font-size: 34px;
+        }
+      }
+    }
+  }
+
+  .s1Grid {
+    .s1Grid_description {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .skillsContainer {
+      .skills_title {
+        font-size: 28px;
+        margin-bottom: 40px;
+      }
+
+      .s1Grid_skills,
+      .s1Grid_skills2 {
+        li {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .section3 {
+    .question {
+      font-size: 17px;
+      line-height: 25px;
+    }
+  }
 }
 
 @media (min-width: 550px) {
