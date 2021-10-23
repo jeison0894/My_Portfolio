@@ -31,7 +31,7 @@
             </p>
          </div>
       </div>
-      <div class="cromo">
+      <div class="cromo my-div">
       </div>
    </header>
 
@@ -112,7 +112,7 @@
             <div class="project_info project_info2">
                <h3>Angular CRUD</h3>
                <h4>Angular / MySQL / NodeJS & Express / Bootstrap</h4>
-               <p>In this project I combine my knowledge of backend and frontend, creating an interface with Angular
+               <p>In this project I combine my knowledge of frontend and backend, creating an interface with Angular
                   that thanks to its interaction with a server created in Express and NodeJS shows on the screen a
                   series of data obtained from a database created in MySQL and hosted on Clever Cloud. </p>
                <a href="https://fullstackprojectmovies.herokuapp.com/inicio" target="_blanket">VIEW PROJECT <span><img
@@ -133,7 +133,7 @@
                <h3>Rock, paper, scissors</h3>
                <h4> interface Design / Javascript / sass</h4>
                <p>A classic game of rock-paper-scissors in Javascript, HTML and CSS with the preprocessor SASS. In this
-                  project I consolidated my knowledge in the concepts of the javascript language, responsive design with
+                  project I consolidated my knowledge in the concepts of the Javascript language, responsive design with
                   first mobile methodology and modulation with the Sass preprocessor.</p>
                <a href="https://game-rockpaperscissors.netlify.app/" target="_blanket">VIEW PROJECT <span><img
                         src="imgs/arrow.svg" alt=""></span> </a>
@@ -173,9 +173,20 @@
          <a href="#top"><img src="imgs/arrowUp.svg" alt="" width="15.55px"></a>
    </footer>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
-   <script src="script.js"></script>
+   <script src="hover.js"></script>
+<script>
+    var myAnimation = new hoverEffect({
+        parent: document.querySelector('.my-div'),
+        intensity: 0.3,
+        image1: 'imgs/image1.jpg',
+        image2: 'imgs/image2.jpg',
+        displacementImage: 'imgs/myDistorsionImage.jpg'
+    });
+</script>
 </body>
 
 </html>
