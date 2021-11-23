@@ -31,7 +31,7 @@
             </p>
          </div>
       </div>
-      <div class="cromo">
+      <div class="cromo my-div">
       </div>
    </header>
 
@@ -173,9 +173,21 @@
          <a href="#top"><img src="imgs/arrowUp.svg" alt="" width="15.55px"></a>
    </footer>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
+   <script src="hover.js"></script>
    <script src="script.js"></script>
+<script>
+    var myAnimation = new hoverEffect({
+        parent: document.querySelector('.my-div'),
+        intensity: 0.3,
+        image1: 'imgs/image1.jpg',
+        image2: 'imgs/image2.jpg',
+        displacementImage: 'imgs/myDistorsionImage.jpg'
+    });
+</script>
 </body>
 
 </html>
